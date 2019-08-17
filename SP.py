@@ -63,9 +63,9 @@ x = td['Date']
 y = td['Open']
 plt.scatter(x,y, label = "Real Stock Price")
 plt.plot(psp, color = 'red', label = 'Calculated Stock Price')
-plt.title('Karnataka Bank Stock Price Prediction')
+plt.title(' Stock Price Prediction')
 plt.xlabel('Date')
-plt.ylabel('Karnataka Bank Stock Price')
+plt.ylabel(' Stock Price')
 
 plt.xticks(x, rotation='45')
 plt.legend()
