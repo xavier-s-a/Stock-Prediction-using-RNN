@@ -49,8 +49,8 @@ ip = dt[len(dt) - len(td) - 60:].values
 ip = ip.reshape(-1,1)
 ip = sc.transform(ip)
 test = []
-#since time stamp is 6o and test contains only 21 data
-for i in range(60, 81):
+#since time stamp is 6o 
+for i in range(60, len(test)):
     test.append(ip[i-60:i, 0])
 test = np.array(test)
 test = np.reshape(test, (test.shape[0], test.shape[1], 1))  
