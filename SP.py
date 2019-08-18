@@ -50,7 +50,7 @@ ip = ip.reshape(-1,1)
 ip = sc.transform(ip)
 test = []
 #since time stamp is 6o 
-for i in range(60, len(test)):
+for i in range(60, len(ip)):
     test.append(ip[i-60:i, 0])
 test = np.array(test)
 test = np.reshape(test, (test.shape[0], test.shape[1], 1))  
